@@ -7,6 +7,10 @@ description: Werken met GitHub (repositories, issues, pull requests, Actions, se
 
 Deze werkruimte heeft de officiele GitHub MCP-server gekoppeld (`https://api.githubcopilot.com/mcp/`, OAuth).
 
+## Als er OOK NovaChat-backend-tools zijn
+
+Zie je naast deze tools ook GitHub-tools uit de NovaChat-backend (namen als `create_code_pr`, `list_repos`, `check_pr_status`, `comment_issue`), gebruik dan voor werk aan de eigen NovaChat-repo's ALTIJD die backend-tools: daar zitten de projectconventies in (PR-route verplicht, "geen checks draaide" is niet hetzelfde als groen, bord-labels, worktree-flow). Deze plugin is voor losstaand repo-werk in deze werkruimte; twee routes door elkaar op dezelfde repo geeft half-toegepaste conventies.
+
 ## Eerste gebruik
 
 Als tools falen met een autorisatiefout is het GitHub-account nog niet gekoppeld: vraag de gebruiker de OAuth-koppeling af te ronden (de app toont hiervoor een inlogprompt bij het eerste gebruik van een GitHub-tool).
