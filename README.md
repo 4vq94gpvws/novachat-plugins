@@ -6,6 +6,7 @@ Claude-formaat plugins voor NovaChat/OpenWork. Elke plugin bundelt een remote MC
 |---|---|
 | Supabase | `https://github.com/4vq94gpvws/novachat-plugins/tree/main/plugins/supabase` |
 | Vercel | `https://github.com/4vq94gpvws/novachat-plugins/tree/main/plugins/vercel` |
+| GitHub | `https://github.com/4vq94gpvws/novachat-plugins/tree/main/plugins/github` |
 
 Installeren kan in NovaChat via **Aanpassen** (sidebar) → URL plakken of de catalogus, of door de URL aan de `claude-plugins`-route van de OpenWork-server te geven.
 

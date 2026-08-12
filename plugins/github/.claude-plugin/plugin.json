@@ -1,0 +1,9 @@
+{
+  "name": "github",
+  "displayName": "GitHub",
+  "description": "Work with GitHub repositories: issues, pull requests, code search, actions and security alerts via the official GitHub MCP server (OAuth).",
+  "version": "1.0.0",
+  "author": {
+    "name": "NovaChat"
+  }
+}
