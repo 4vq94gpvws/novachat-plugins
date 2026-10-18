@@ -1,0 +1,49 @@
+{
+  "name": "novachat",
+  "owner": { "name": "NovaChat" },
+  "metadata": {
+    "description": "De plugins die NovaChat aanbiedt in Aanpassen. Volgorde = volgorde in het scherm; met de tag uitgelicht staat bovenaan."
+  },
+  "plugins": [
+    {
+      "name": "netlify",
+      "displayName": "Netlify",
+      "description": "Websites online zetten en beheren: projecten, deploys en instellingen op Netlify.",
+      "category": "hosting",
+      "tags": ["uitgelicht"],
+      "source": { "source": "url", "url": "https://github.com/netlify/context-and-tools.git" }
+    },
+    {
+      "name": "vercel",
+      "displayName": "Vercel",
+      "description": "Je Vercel-projecten bekijken: deploys, buildlogs en omgevingsvariabelen.",
+      "category": "hosting",
+      "tags": ["uitgelicht"],
+      "source": "./plugins/vercel"
+    },
+    {
+      "name": "supabase",
+      "displayName": "Supabase",
+      "description": "Je Supabase-database gebruiken: tabellen, gegevens opvragen, gebruikers en opslag.",
+      "category": "database",
+      "tags": ["uitgelicht"],
+      "source": "./plugins/supabase"
+    },
+    {
+      "name": "stripe",
+      "displayName": "Stripe",
+      "description": "Betalingen via Stripe: klanten, producten, facturen en betalingen inzien en beheren.",
+      "category": "betalingen",
+      "tags": ["uitgelicht"],
+      "source": { "source": "git-subdir", "url": "https://github.com/stripe/ai.git", "path": "providers/claude/plugin" }
+    },
+    {
+      "name": "github",
+      "displayName": "GitHub",
+      "description": "Repositories, issues en pull requests op GitHub. Inloggen vanuit NovaChat kan nog niet automatisch.",
+      "category": "ontwikkelen",
+      "tags": [],
+      "source": "./plugins/github"
+    }
+  ]
+}
