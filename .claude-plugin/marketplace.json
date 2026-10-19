@@ -1,6 +1,8 @@
 {
   "name": "novachat",
-  "owner": { "name": "NovaChat" },
+  "owner": {
+    "name": "NovaChat"
+  },
   "metadata": {
     "description": "De plugins die NovaChat aanbiedt in Aanpassen. Volgorde = volgorde in het scherm; met de tag uitgelicht staat bovenaan."
   },
@@ -10,15 +12,22 @@
       "displayName": "Netlify",
       "description": "Websites online zetten en beheren: projecten, deploys en instellingen op Netlify.",
       "category": "hosting",
-      "tags": ["uitgelicht"],
-      "source": { "source": "url", "url": "https://github.com/netlify/context-and-tools.git" }
+      "tags": [
+        "uitgelicht"
+      ],
+      "source": {
+        "source": "url",
+        "url": "https://github.com/netlify/context-and-tools.git"
+      }
     },
     {
       "name": "vercel",
       "displayName": "Vercel",
       "description": "Je Vercel-projecten bekijken: deploys, buildlogs en omgevingsvariabelen.",
       "category": "hosting",
-      "tags": ["uitgelicht"],
+      "tags": [
+        "uitgelicht"
+      ],
       "source": "./plugins/vercel"
     },
     {
@@ -26,7 +35,9 @@
       "displayName": "Supabase",
       "description": "Je Supabase-database gebruiken: tabellen, gegevens opvragen, gebruikers en opslag.",
       "category": "database",
-      "tags": ["uitgelicht"],
+      "tags": [
+        "uitgelicht"
+      ],
       "source": "./plugins/supabase"
     },
     {
@@ -34,8 +45,55 @@
       "displayName": "Stripe",
       "description": "Betalingen via Stripe: klanten, producten, facturen en betalingen inzien en beheren.",
       "category": "betalingen",
-      "tags": ["uitgelicht"],
-      "source": { "source": "git-subdir", "url": "https://github.com/stripe/ai.git", "path": "providers/claude/plugin" }
+      "tags": [
+        "uitgelicht"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/stripe/ai.git",
+        "path": "providers/claude/plugin"
+      }
+    },
+    {
+      "name": "zapier",
+      "displayName": "Zapier",
+      "description": "Koppel duizenden andere apps: laat de agent taken uitvoeren in je eigen apps via Zapier.",
+      "category": "koppelingen",
+      "tags": [
+        "uitgelicht"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/zapier/zapier-mcp.git",
+        "path": "plugins/zapier"
+      }
+    },
+    {
+      "name": "notion",
+      "displayName": "Notion",
+      "description": "Notities, documenten en wiki's in Notion opzoeken, maken en bijwerken.",
+      "category": "documenten",
+      "tags": [
+        "uitgelicht"
+      ],
+      "source": {
+        "source": "url",
+        "url": "https://github.com/makenotion/claude-code-notion-plugin.git"
+      }
+    },
+    {
+      "name": "canva",
+      "displayName": "Canva",
+      "description": "Ontwerpen in Canva maken, opzoeken en aanpassen.",
+      "category": "ontwerpen",
+      "tags": [
+        "uitgelicht"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/canva-sdks/canva-skills.git",
+        "path": "plugins/canva"
+      }
     },
     {
       "name": "github",
@@ -44,6 +102,87 @@
       "category": "ontwikkelen",
       "tags": [],
       "source": "./plugins/github"
+    },
+    {
+      "name": "dropbox",
+      "displayName": "Dropbox",
+      "description": "Bestanden in je Dropbox zoeken, lezen en delen.",
+      "category": "bestanden",
+      "tags": [],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/dropbox/dropbox-ai-plugins.git",
+        "path": "claude"
+      }
+    },
+    {
+      "name": "airtable",
+      "displayName": "Airtable",
+      "description": "Je Airtable-lijsten en -tabellen bekijken en bijwerken.",
+      "category": "database",
+      "tags": [],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Airtable/skills.git",
+        "path": "plugins/airtable"
+      }
+    },
+    {
+      "name": "monday-crm",
+      "displayName": "Monday CRM",
+      "description": "Klanten, contacten en deals in Monday bijhouden.",
+      "category": "klanten",
+      "tags": [],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/mondaycom/mcp.git",
+        "path": "plugins/monday-crm"
+      }
+    },
+    {
+      "name": "miro",
+      "displayName": "Miro",
+      "description": "Miro-borden lezen en aanvullen: whiteboards, brainstorms en schema's.",
+      "category": "ontwerpen",
+      "tags": [],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/miroapp/miro-ai.git",
+        "path": "claude-plugins/miro"
+      }
+    },
+    {
+      "name": "wix",
+      "displayName": "Wix",
+      "description": "Je Wix-website beheren: pagina's, producten en instellingen.",
+      "category": "hosting",
+      "tags": [],
+      "source": {
+        "source": "url",
+        "url": "https://github.com/wix/skills.git"
+      }
+    },
+    {
+      "name": "hostinger",
+      "displayName": "Hostinger",
+      "description": "Je hosting en domeinen bij Hostinger beheren.",
+      "category": "hosting",
+      "tags": [],
+      "source": {
+        "source": "url",
+        "url": "https://github.com/hostinger/claude-plugin.git"
+      }
+    },
+    {
+      "name": "paypal",
+      "displayName": "PayPal",
+      "description": "Betalingen, facturen en transacties in PayPal inzien en beheren.",
+      "category": "betalingen",
+      "tags": [],
+      "source": {
+        "source": "url",
+        "url": "https://github.com/paypal/AI-Toolkit.git"
+      }
     }
   ]
 }
